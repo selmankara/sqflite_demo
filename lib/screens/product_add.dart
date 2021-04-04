@@ -25,7 +25,7 @@ class ProductAddState extends State {
         child: Column(
           children: [
             buildNameField(),
-            buildDescriptionFiled(),
+            buildDescriptionField(),
             buildUnitPriceField(),
             buildSaveButton(),
           ],
@@ -41,7 +41,7 @@ class ProductAddState extends State {
     );
   }
 
-  buildDescriptionFiled() {
+  buildDescriptionField() {
     return TextFormField(
       decoration: InputDecoration(labelText: 'Ürün Açıklaması'),
       controller: txtDescription,
